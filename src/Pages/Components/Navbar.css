@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+#font2 {
+  font-family: "KoHo", sans-serif;
+
+  font-style: normal;
+}
+
+#font {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#navbar {
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* src/components/InfiniteImageScroll.css */
+
+/* Wrapper to constrain the visible area */
+.infinite-scroll {
+  overflow: hidden;
+  width: 100%;
+  height: 200px; /* Adjust as per your image height */
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+/* Container holding all the images */
+.scroll-container {
+  display: flex;
+  animation: scroll-horizontal 20s linear infinite;
+}
+
+/* Images inside the scroll */
+.scroll-container img {
+  width: 100px; /* Adjust as per your image width */
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px; /* Optional spacing between images */
+}
+
+/* Keyframe for horizontal scrolling */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
