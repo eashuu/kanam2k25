@@ -1,0 +1,34 @@
+/* Wrapper for infinite scroll */
+.infinite-scroll-wrapper {
+    display: flex;
+    animation: scrollLeftToRight 20s linear infinite;
+    gap: 1rem; /* Adjust spacing between items */
+  }
+  
+  /* Slide container for each logo */
+  .slide {
+    flex-shrink: 0; /* Prevents shrinking of the slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Responsive image */
+  .responsive-img {
+    width: 100%;       /* Image takes full width of container */
+    max-width: 200px;  /* Set a reasonable max width */
+    height: auto;      /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+    border-radius: 8px; /* Optional: Rounded corners for better visuals */
+  }
+  
+  /* Animation for scrolling left to right */
+  @keyframes scrollLeftToRight {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
